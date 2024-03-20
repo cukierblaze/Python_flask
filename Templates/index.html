@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <h1>Weather Forecast for {{ city }}</h1>
+    <table border="1">
+        <tr>
+            <th>Date</th>
+            <th>Minimum</th>
+            <th>Unit</th>
+            <th>Maximum</th>
+            <th>Unit</th>
+        </tr>
+        {% for forecast in forecast_data %}
+        <tr>
+            <td>{{ forecast[0] }}</td>
+            <td>{{ forecast[2] }}</td>
+            <td>{{ forecast[3] }}</td>
+            <td>{{ forecast[5] }}</td>
+            <td>{{ forecast[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
