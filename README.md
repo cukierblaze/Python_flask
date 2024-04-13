@@ -13,7 +13,7 @@ A **Python3** web app for searching weather.
 
 I used the **Flask** framework and the **Bootstrap** library to create a pleasant graphical interface for the application. 
 
-The application stores information in a database using the **SQLite** module in Python. 
+The application uploades data from public **API** and stores information in a database using the **SQLite** module in Python. 
 
 ## Idea
 The idea for this app was to create a pleasant and easy way to check out the weather.  
